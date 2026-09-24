@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&family=Playwrite+CU+Guides&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <title>Bootstrap Class - Geração Tech 4.0</title>
     <style>
         /* Toggle do tema fixado no canto inferior direito */
@@ -15,162 +23,191 @@
             right: 15px;
             z-index: 1000;
         }
+
+        h1 {
+            font-family: 'Original Surfer', cursive;
+        }
     </style>
 </head>
 
-<body>
-    <div>
-        <h1>Meu Dashboard</h1>
-        <p>Gerencie suas informações</p>
-        <div>Você possui novas notificações</div>
-        <div>
-            <div>
-                <div>
-                    <div>
-                        <h5>Perfil</h5>
-                        <p>Gerencie seus dados pessoais</p>
-                        <button>Acessar</button>
+<body class="container" data-bs-theme="light">
+    <div class="my-4">
+        <h1 class="mt-4">
+            <i class="fa-solid fa-gauge"></i>
+            Meu Dashboard
+        </h1>
+
+        <p class="lead">Gerencie suas informações</p>
+        <div class="alert alert-info" role="alert">
+            <i class="fa-solid fa-circle-info"></i>
+            Você possui novas notificações
+        </div>
+        <div class="row g-4 mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-user"></i>
+                            Perfil
+                        </h5>
+                        <p class="card-text">
+                            Gerencie seus dados pessoais
+                        </p>
+                        <button class="btn btn-primary">
+                            Acessar
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <h5>Relatórios</h5>
-                        <p>Consulte seus resultados</p>
-                        <button>Visualizar</button>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="fas fa-chart-line"></i>
+                            Relatórios
+                        </h5>
+                        <p class="card-text">
+                            Consulte seus resultados
+                        </p>
+                        <button class="btn btn-success">
+                            Visualizar
+                            <i class="fas fa-eye"></i>
+                        </button>
                     </div>
                 </div>
             </div>
-            <div>
-                <div>
-                    <div>
-                        <h5>Configurações</h5>
-                        <p>Personalize sua conta</p>
-                        <button>Configurar</button>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div>
+                            <h5 class="card-title">
+                                <i class="fas fa-gear"></i>
+                                Configurações
+                            </h5>
+                            <p class="card-text">
+                                Personalize sua conta
+                            </p>
+                            <button class="btn btn-secondary">
+                                Configurar
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
+            </div class="row g-4 mt-1 align-items-center">>
+            <h2 class="mt-4">
+                 <i class="fas fa-envelope"></i>
+                Contato</h2>
+            <div>
+                <div>
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3 class="mt-4">Canais de atendimento</h3>
+                    <div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" >Canal</th>
+                                    <th scope="col" >Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    
+                                    <td>WhatsApp</td>
+                                    <td><span>Online</span></td>
+                                </tr>
+                                <tr>
+                                    <td>E-mail</td>
+                                    <td><span>Em análise</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Suporte</td>
+                                    <td><span>Agendado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Atendimento</td>
+                                    <td><span>Indisponível</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <h3 class="mt-4">Redes sociais</h3>
+            <div>
+                <a href="https://github.com/carloeira" target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/carloeira" target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
+                <a href="https://instagram.com/ielceara" target="_blank" rel="noopener noreferrer">
+                    Instagram
+                </a>
             </div>
         </div>
-        <h2>Contato</h2>
-        <div>
-            <div>
-                <form>
-                    <div>
-                        <label>Nome</label>
-                        <input>
-                    </div>
-                    <div>
-                        <label>E-mail</label>
-                        <input>
-                    </div>
-                    <div>
-                        <label>Mensagem</label>
-                        <textarea></textarea>
-                    </div>
-                    <button>Enviar</button>
-                </form>
-            </div>
-            <div>
-                <h3>Status dos canais de atendimento</h3>
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Canal</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>WhatsApp</td>
-                                <td><span>Online</span></td>
-                            </tr>
-                            <tr>
-                                <td>E-mail</td>
-                                <td><span>Em análise</span></td>
-                            </tr>
-                            <tr>
-                                <td>Suporte</td>
-                                <td><span>Agendado</span></td>
-                            </tr>
-                            <tr>
-                                <td>Atendimento</td>
-                                <td><span>Indisponível</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <h3>Redes sociais</h3>
-        <div>
-            <a 
-                href="https://github.com/carloeira" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                GitHub
-            </a>
-            <a 
-                href="https://linkedin.com/in/carloeira" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                LinkedIn
-            </a>
-            <a 
-                href="https://instagram.com/ielceara" 
-                target="_blank" 
-                rel="noopener noreferrer">
-                Instagram
-            </a>
-        </div>
-    </div>
 
-    <button 
-        id="themeToggle" 
-        class="btn btn-outline-success ms-2" 
-        type="button">
-    </button>
+        <button id="themeToggle" class="btn btn-outline-success ms-2" type="button">
+        </button>
 
-    <script>
-        const themeToggle = document.getElementById("themeToggle");
+        <script>
+            const themeToggle = document.getElementById("themeToggle");
 
-        // Verifica se existe um tema salvo
-        let theme = localStorage.getItem("theme");
+            // Verifica se existe um tema salvo
+            let theme = localStorage.getItem("theme");
 
-        // Se não existir, usa o tema preferido como claro
-        if (!theme) {
-            theme = window.matchMedia("(prefers-color-scheme: light)").matches
-                ? "dark"
-                : "light";
-        }
-
-        // Função para aplicar o tema
-        function applyTheme() {
-            document.documentElement.setAttribute("data-bs-theme", theme);
-
-            if (theme === "dark") {
-                themeToggle.textContent = "🌙";
-            } else {
-                themeToggle.textContent = "☀️";
+            // Se não existir, usa o tema preferido como claro
+            if (!theme) {
+                theme = window.matchMedia("(prefers-color-scheme: light)").matches
+                    ? "dark"
+                    : "light";
             }
-        }
 
-        // Aplica o tema ao abrir a página
-        applyTheme();
+            // Função para aplicar o tema
+            function applyTheme() {
+                document.documentElement.setAttribute("data-bs-theme", theme);
 
-        // Troca o tema ao clicar
-        themeToggle.addEventListener("click", () => {
-            theme = theme === "light" ? "dark" : "light";
+                if (theme === "dark") {
+                    themeToggle.textContent = "🌙";
+                } else {
+                    themeToggle.textContent = "☀️";
+                }
+            }
 
-            localStorage.setItem("theme", theme);
-
+            // Aplica o tema ao abrir a página
             applyTheme();
-        });
-    </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+            // Troca o tema ao clicar
+            themeToggle.addEventListener("click", () => {
+                theme = theme === "light" ? "dark" : "light";
+
+                localStorage.setItem("theme", theme);
+
+                applyTheme();
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
 </body>
+
 </html>
